@@ -1,0 +1,70 @@
+# Goldfinch Docs | Goldfinch
+
+## Goldfinch Prime
+
+- [Introduction and Overview](https://docs.goldfinch.finance/goldfinch/introduction-and-overview.md): What is Goldfinch Prime, and why does it matter?
+- [FAQ](https://docs.goldfinch.finance/goldfinch/faq.md): This page contains answers to common questions about Goldfinch Prime
+
+## Goldfinch V1 Documentation
+
+- [Introduction](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/readme.md): What is the Goldfinch Protocol, and why does it matter?  Goldfinch’s documentation is community-driven.
+- [Goldfinch Overview](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/goldfinch-overview.md): A short overview of Goldfinch's key mechanics
+- [Protocol Mechanics](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics.md)
+- [Glossary of key terms](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/glossary-of-key-terms.md)
+- [Borrowers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/borrowers.md)
+- [Auditors](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/auditors.md)
+- [Backers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/backers.md)
+- [Liquidity Providers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/liquidityproviders.md)
+- [Leverage Model](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/leveragemodel.md)
+- [Membership](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/membership.md): Join a Membership Vault as an active Goldfinch Investor to upgrade your Goldfinch participation and support Goldfinch’s growth and expansion.
+- [Investor Incentives](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/investor-incentives.md)
+- [Backer Incentives](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/investor-incentives/backer-incentives.md)
+- [Senior Pool Liquidity Mining](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/investor-incentives/senior-pool-liquidity-mining.md)
+- [Unique Entity Check](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/uniqueentitycheck.md)
+- [Discussion of Fraud Resistance](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/discussionoffraudresistance.md)
+- [Staking](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/staking.md)
+- [GFI Token](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/gfi-token.md): GFI is the official token of Goldfinch.
+- [Liquidity & LP Withdrawals](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/liquidity.md)
+- [Default Process](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/protocol-mechanics/default-process.md): What triggers a Borrower Pool to enter default status, and the process that follows.
+- [Governance](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/governance.md)
+- [Tokenomics](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/tokenomics.md)
+- [Token Launch FAQ](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/tokenomics/token-launch-faq.md)
+- [Unique Identity (UID)](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/unique-identity-uid.md)
+- [For Users](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/unique-identity-uid/for-users.md)
+- [For Developers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/unique-identity-uid/for-developers.md): This page provides technical guidance on how UID works, and how to integrate it with your protocol or dApp.
+- [Unique ID FAQ](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/unique-identity-uid/unique-id-faq.md): For greater support, head over to the Discord server linked under the Important Links section.
+- [Borrower Communication](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-communication.md): Tooling to facilitate communications between Borrowers and Investors on Goldfinch
+- [Investor How-To](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides.md): Educational guides on how to use the protocol, for Goldfinch Investors
+- [Getting Started on Goldfinch](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/getting-started.md)
+- [Verifying Your Identity](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/verifying-your-identity.md)
+- [Participating in Callable Deals](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/participating-in-callable-deals.md): Callable loans provide Backers with the flexibility to call back their capital with 2 months notice.
+- [Participating in the Senior Pool](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/participating-in-the-senior-pool.md): This section covers instructions on supplying / staking in the Senior Pool
+- [Participating in Borrower Pools](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/participating-in-borrower-pools.md)
+- [Participating in Liquidity Mining](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/participating-in-liquidity-mining.md)
+- [Claiming GFI Distributions](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/claiming-gfi-distributions.md): This is a manual for receiving GFI.
+- [Accessing Borrower Communication Channels](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/accessing-borrower-communication-channels.md): Step-by-step instructions to access Goldfinch's Borrower communication channels
+- [Purchasing coverage with Nexus Mutual](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/guides/purchasing-cover-with-nexus-mutual.md)
+- [Borrower Mechanics](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics.md): A guide to Goldfinch for Borrowers
+- [Raising Capital through Goldfinch](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/raising-capital-through-goldfinch.md)
+- [Goldfinch's Capital Providers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/goldfinchs-capital-providers.md)
+- [Sample Backer Economics](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/goldfinchs-capital-providers/sample-backer-economics.md)
+- [Goldfinch's Borrowers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/goldfinchs-borrowers.md)
+- [Template Borrower Deal Structures](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/goldfinchs-borrowers/template-borrower-deal-structures.md)
+- [Borrower Case Study](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/goldfinchs-borrowers/borrower-case-study.md): Almavest - August 2021
+- [Structure and Legal Considerations](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations.md)
+- [Cash in and out of Goldfinch](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/cash-in-and-out-of-goldfinch.md)
+- [Recommended Service Providers](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/cash-in-and-out-of-goldfinch/recommended-service-providers.md)
+- [Investor KYC / AML Requirements](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/investor-kyc-aml-requirements.md)
+- [Key Mechanics to Consider](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/key-mechanics-to-consider.md)
+- [Debt Facility Mechanics](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/key-mechanics-to-consider/debt-facility-mechanics.md): Below are some key mechanics of a debt facility on the Goldfinch Protocol
+- [Transaction Documentation](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/key-mechanics-to-consider/transaction-documentation.md): Below are some key things for Borrowers to note when preparing transaction documentation for a Borrower Pool on the Goldfinch Protocol
+- [Borrower Senior Pool Participation](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/borrower-senior-pool-participation.md)
+- [Backer Transferability](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-mechanics/structure-and-legal-considerations/backer-transferability.md)
+- [Borrower How-To](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to.md): Educational guides on how to use the protocol, for Goldfinch Borrowers
+- [Launching a Borrower Pool on Goldfinch](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch.md)
+- [Stage 0: Preliminary Actions and Decisions](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch/stage-0-preliminary-actions-and-decisions.md)
+- [Stage 1: Deal Structure and Timelines](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch/stage-1-deal-structure-and-timelines.md)
+- [Stage 2: Dataroom Preparation](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch/stage-2-dataroom-preparation.md)
+- [Stage 3: Announcements and Tooling Set Up](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch/stage-3-announcements-and-tooling-set-up.md)
+- [Stage 4: Borrower Closing](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/borrower-how-to/launching-a-borrower-pool-on-goldfinch/stage-4-borrower-closing.md)
+- [General FAQ](https://docs.goldfinch.finance/goldfinch/goldfinch-v1/general-faq.md)

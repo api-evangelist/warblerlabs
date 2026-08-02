@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: warblerlabs.com
+  https: false
+- host: dev.goldfinch.finance
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 23 04:41:54 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+- host: api.goldsky.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 12 01:54:43 2026 GMT
+  hsts: null
+domains:
+- domain: warblerlabs.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: goldfinch.finance
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

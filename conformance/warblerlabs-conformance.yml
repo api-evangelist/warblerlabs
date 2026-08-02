@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: derived
+source: graphql/goldfinch-subgraph-schema.graphql
+description: >-
+  Cross-cutting standards conformance for the Goldfinch public data surface. The
+  only public developer API is a read-only GraphQL subgraph served over The Graph
+  / Goldsky, so conformance centers on GraphQL and The Graph subgraph conventions
+  rather than REST/OAuth/compliance certifications. Smart-contract security is
+  externally audited but those audits are not API compliance certifications.
+standards:
+- id: graphql
+  conforms: true
+  evidence: Public GraphQL subgraph with a published SDL schema (25 @entity types, interfaces, enums).
+- id: the-graph-subgraph
+  conforms: true
+  evidence: Deployed as a subgraph indexing on-chain protocol state; queried via The Graph GraphQL conventions (first/skip/where/orderBy).
+- id: oauth2
+  conforms: false
+  evidence: Endpoint is public and read-only; no authentication or OAuth is used.
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors follow the GraphQL errors[] envelope, not RFC 9457 problem+json.
+- id: rest-openapi
+  conforms: false
+  evidence: No REST/OpenAPI surface is published; the API is GraphQL-only.
+- id: soc2
+  conforms: false
+  evidence: No published SOC 2 / ISO 27001 / PCI compliance program was found.
+smart_contract_audits:
+  note: >-
+    Not an API compliance certification, recorded for completeness. Every
+    Goldfinch release is externally audited (CertiK, Trail of Bits) with reports
+    published open-source; Warbler Labs also runs an internal audit process.
+  reports_url: https://dev.goldfinch.finance/docs/security/audit-reports/

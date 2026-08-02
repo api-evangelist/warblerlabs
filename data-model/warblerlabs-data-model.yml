@@ -1,0 +1,163 @@
+generated: '2026-07-21'
+method: derived
+source: graphql/goldfinch-subgraph-schema.graphql
+description: >-
+  Entity-relationship graph derived from the Goldfinch subgraph GraphQL schema
+  (25 @entity types). Relationships are inferred from GraphQL fields that
+  reference another entity type; [] denotes a to-many (list) relationship.
+notes: >-
+  The subgraph indexes on-chain protocol state. `id` fields are typically the
+  entity's Ethereum address or a derived hash. The graph centers on User, which
+  ties together staked positions, pool tokens, zaps, transactions, borrower
+  contracts, community-rewards tokens and membership.
+entities:
+  - name: SeniorPool
+    kind: singleton
+    note: Hardcoded id "1"; the Senior Pool is a singleton.
+  - name: Protocol
+    kind: singleton
+  - name: User
+    note: Central actor; wallet-scoped aggregate of positions and activity.
+  - name: SeniorPoolStakedPosition
+  - name: BorrowerContract
+  - name: CreditLine
+  - name: PoolToken
+  - name: StakingRewardsData
+  - name: BackerRewardsData
+  - name: Transaction
+  - name: Zap
+  - name: CommunityRewardsToken
+  - name: MembershipEpoch
+  - name: VaultedGfi
+  - name: VaultedStakedPosition
+  - name: VaultedPoolToken
+  - name: Membership
+  - name: MembershipRoster
+  - name: MembershipRewardDisbursement
+  - name: SeniorPoolWithdrawalRequest
+  - name: SeniorPoolWithdrawalEpoch
+  - name: SeniorPoolWithdrawalRequestRoster
+  - name: SeniorPoolWithdrawalDisbursement
+  - name: SeniorPoolWithdrawalDisbursementPostponement
+  - name: ScheduledRepayment
+interfaces:
+  - TrancheInfo
+  - Loan
+enums:
+  - StakedPositionType
+  - TranchedPoolCreditLineVersion
+  - UidType
+  - RepaymentFrequency
+  - TransactionCategory
+  - SupportedCrypto
+  - SupportedNft
+  - CommunityRewardsTokenSource
+relationships:
+  - from: User
+    to: SeniorPoolStakedPosition
+    type: has_many
+    via: seniorPoolStakedPositions
+  - from: User
+    to: VaultedStakedPosition
+    type: has_many
+    via: vaultedStakedPositions
+  - from: User
+    to: PoolToken
+    type: has_many
+    via: poolTokens
+  - from: User
+    to: VaultedPoolToken
+    type: has_many
+    via: vaultedPoolTokens
+  - from: User
+    to: Zap
+    type: has_many
+    via: zaps
+  - from: User
+    to: Transaction
+    type: has_many
+    via: transactions
+  - from: User
+    to: BorrowerContract
+    type: has_many
+    via: borrowerContracts
+  - from: User
+    to: CommunityRewardsToken
+    type: has_many
+    via: communityRewardsTokens
+  - from: SeniorPoolStakedPosition
+    to: User
+    type: belongs_to
+    via: user
+  - from: SeniorPoolStakedPosition
+    to: VaultedStakedPosition
+    type: has_one
+    via: vaultedAsset
+  - from: BorrowerContract
+    to: User
+    type: belongs_to
+    via: user
+  - from: CreditLine
+    to: BorrowerContract
+    type: belongs_to
+    via: borrowerContract
+  - from: PoolToken
+    to: User
+    type: belongs_to
+    via: user
+  - from: PoolToken
+    to: VaultedPoolToken
+    type: has_one
+    via: vaultedAsset
+  - from: Zap
+    to: User
+    type: belongs_to
+    via: user
+  - from: Zap
+    to: SeniorPoolStakedPosition
+    type: has_one
+    via: seniorPoolStakedPosition
+  - from: Zap
+    to: PoolToken
+    type: has_one
+    via: poolToken
+  - from: CommunityRewardsToken
+    to: User
+    type: belongs_to
+    via: user
+  - from: VaultedGfi
+    to: User
+    type: belongs_to
+    via: user
+  - from: VaultedStakedPosition
+    to: User
+    type: belongs_to
+    via: user
+  - from: VaultedStakedPosition
+    to: SeniorPoolStakedPosition
+    type: has_one
+    via: seniorPoolStakedPosition
+  - from: VaultedPoolToken
+    to: User
+    type: belongs_to
+    via: user
+  - from: VaultedPoolToken
+    to: PoolToken
+    type: has_one
+    via: poolToken
+  - from: Membership
+    to: User
+    type: belongs_to
+    via: user
+  - from: MembershipRoster
+    to: Membership
+    type: has_many
+    via: members
+  - from: SeniorPoolWithdrawalRequest
+    to: User
+    type: belongs_to
+    via: user
+  - from: SeniorPoolWithdrawalRequestRoster
+    to: SeniorPoolWithdrawalRequest
+    type: has_many
+    via: requests

@@ -1,0 +1,61 @@
+generated: '2026-07-21'
+method: derived
+source: graphql/goldfinch-subgraph-schema.graphql
+docs: https://dev.goldfinch.finance/docs/data/the_graph
+description: >-
+  Cross-cutting request/response conventions for the Goldfinch public data
+  surface. The only public developer API is a read-only GraphQL subgraph indexing
+  Goldfinch Protocol state, served over The Graph / Goldsky. Conventions below are
+  the standard The Graph subgraph GraphQL semantics applied to this schema; they
+  are derived, not provider-documented beyond the endpoint reference.
+transport:
+  protocol: GraphQL over HTTP
+  method: POST
+  endpoint: https://api.goldsky.com/api/public/project_cmgz2qi2d003xxhp2eqgwfd5o/subgraphs/goldfinch-v2/annual_brown_worm/gn
+  content_type: application/json
+authentication:
+  required: false
+  note: Public, read-only endpoint. No API key, token, or OAuth is required.
+idempotency:
+  supported: false
+  note: Read-only query surface; no mutations, so idempotency keys do not apply.
+pagination:
+  style: the-graph
+  params:
+    first: Number of entities to return (subgraph default 100, maximum 1000 per query).
+    skip: Number of entities to skip (maximum 5000).
+  deep_pagination: >-
+    For result sets beyond skip=5000, paginate with a where filter on a sortable
+    field, e.g. where: { id_gt: $lastId }, orderBy: id, orderDirection: asc.
+filtering:
+  argument: where
+  operators: >-
+    Field-suffix operators supported by The Graph, e.g. _gt, _gte, _lt, _lte,
+    _in, _not, _contains, _starts_with (availability depends on scalar type).
+ordering:
+  params:
+    orderBy: Entity field to sort by.
+    orderDirection: asc | desc
+time_travel:
+  supported: true
+  note: >-
+    Queries accept a block argument (block: { number: N } or block: { hash: "0x..." })
+    to read historical protocol state at a given Ethereum block.
+error_envelope:
+  shape: graphql-errors
+  note: >-
+    Errors are returned in the GraphQL top-level errors[] array (each with a
+    message and optional locations/path); HTTP status is typically 200 even on
+    query errors.
+versioning:
+  scheme: subgraph-deployment
+  note: >-
+    Version is encoded in the subgraph name/deployment path (goldfinch-v2); a new
+    deployment is published to a new path rather than versioned via headers.
+rate_limiting:
+  documented: false
+  note: No rate-limit signaling is documented for the public Goldsky endpoint.
+cross_links:
+  data_model: data-model/warblerlabs-data-model.yml
+  schema: graphql/goldfinch-subgraph-schema.graphql
+  conformance: conformance/warblerlabs-conformance.yml

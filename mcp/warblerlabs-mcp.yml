@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: graphql/goldfinch-subgraph-schema.graphql
+description: >-
+  No official/hosted MCP server was found for Goldfinch or Warbler Labs (searched
+  the docs, the goldfinch-eng GitHub org, and MCP registries). This is a CANDIDATE
+  tool list derived from the read-only GraphQL subgraph so an MCP server could be
+  stood up over the public endpoint. Not published by the provider.
+server:
+  name: goldfinch-subgraph
+  transport: http
+  endpoint: https://api.goldsky.com/api/public/project_cmgz2qi2d003xxhp2eqgwfd5o/subgraphs/goldfinch-v2/annual_brown_worm/gn
+  auth: none
+tools:
+- name: get_senior_pool
+  description: Read the Goldfinch Senior Pool singleton (share price, assets, APY, default rate).
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#SeniorPool
+- name: get_protocol
+  description: Read protocol-level aggregate state.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#Protocol
+- name: get_user
+  description: Read a wallet-scoped User aggregate (staked positions, pool tokens, transactions, membership).
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#User
+- name: list_tranched_pools
+  description: List tranched (borrower) pools indexed by the subgraph.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#TranchedPool
+- name: list_pool_tokens
+  description: List backer PoolToken positions.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#PoolToken
+- name: list_transactions
+  description: List indexed protocol Transaction records.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#Transaction
+- name: list_senior_pool_staked_positions
+  description: List staked positions in the Senior Pool.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#SeniorPoolStakedPosition
+- name: list_membership
+  description: List membership vault positions and rosters.
+  source_entity: graphql/goldfinch-subgraph-schema.graphql#Membership
