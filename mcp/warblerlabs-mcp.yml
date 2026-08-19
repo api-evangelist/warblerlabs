@@ -2,11 +2,9 @@ generated: '2026-07-21'
 method: derived
 status: candidate
 source: graphql/goldfinch-subgraph-schema.graphql
-description: >-
-  No official/hosted MCP server was found for Goldfinch or Warbler Labs (searched
-  the docs, the goldfinch-eng GitHub org, and MCP registries). This is a CANDIDATE
-  tool list derived from the read-only GraphQL subgraph so an MCP server could be
-  stood up over the public endpoint. Not published by the provider.
+description: No official/hosted MCP server was found for Goldfinch or Warbler Labs (searched the docs,
+  the goldfinch-eng GitHub org, and MCP registries). This is a CANDIDATE tool list derived from the read-only
+  GraphQL subgraph so an MCP server could be stood up over the public endpoint. Not published by the provider.
 server:
   name: goldfinch-subgraph
   transport: http
@@ -37,3 +35,9 @@ tools:
 - name: list_membership
   description: List membership vault positions and rosters.
   source_entity: graphql/goldfinch-subgraph-schema.graphql#Membership
+deployment:
+  mode: none
+  verified: derived
+  tools: 8
+  checked: '2026-08-12'
+  source: catalog MCP census
