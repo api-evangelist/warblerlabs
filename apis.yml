@@ -39,6 +39,7 @@ x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - kindred-ventures
+- a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
@@ -119,6 +120,12 @@ common:
   url: https://dev.goldfinch.finance/docs/security/bug-bounty/
 - type: DomainSecurity
   url: security/warblerlabs-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/warbler-labs
+- type: Blog
+  url: https://goldfinch.substack.com/
+- type: Website
+  url: https://www.warblerlabs.com/
 x-enrichment:
   date: '2026-07-21'
   status: enriched
